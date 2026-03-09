@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  # ─── Voice AI Agent ─────────────────────────────────────
+  voice-agent:
+    build: .
+    container_name: voice-ai-agent
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - REDIS_URL=redis://redis:6379/0
+      - HOST=0.0.0.0
+      - PORT=8000
+      - DEBUG=false
+      - LOG_LATENCY=true
+      - TTS_ENGINE=edge-tts
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      - redis
+    restart: unless-stopped
+    networks:
+      - voice-agent-network
+
+  # ─── Redis (Session Memory) ────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: voice-ai-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes --maxmemory 128mb --maxmemory-policy allkeys-lru
+    restart: unless-stopped
+    networks:
+      - voice-agent-network
+
+volumes:
+  redis-data:
+
+networks:
+  voice-agent-network:
+    driver: bridge

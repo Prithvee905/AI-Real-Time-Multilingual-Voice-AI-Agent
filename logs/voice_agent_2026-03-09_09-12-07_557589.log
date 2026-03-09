@@ -1,0 +1,6 @@
+2026-03-09 09:12:07 | INFO | 🚀 Starting Voice AI Agent...
+2026-03-09 09:12:07 | INFO | ✅ Database initialized with tables and seed data
+2026-03-09 09:12:07 | INFO | ✅ Database initialized
+2026-03-09 09:12:07 | INFO | 🔑 OpenAI API Key: configured
+2026-03-09 09:13:34 | INFO | 🔌 WebSocket connected: session=sess_b6lwq7bb
+2026-03-09 09:13:41 | ERROR | ❌ STT Error [832ms]: Error code: 401 - {'error': {'message': 'Incorrect API key provided: AIzaSyDm***************************j4oM. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}

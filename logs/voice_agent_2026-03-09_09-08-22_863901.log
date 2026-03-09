@@ -1,0 +1,14 @@
+2026-03-09 09:08:23 | INFO | 🚀 Starting Voice AI Agent...
+2026-03-09 09:08:23 | INFO | ✅ Database initialized with tables and seed data
+2026-03-09 09:08:23 | INFO | ✅ Database initialized
+2026-03-09 09:08:23 | INFO | 🔑 OpenAI API Key: configured
+2026-03-09 09:08:26 | INFO | 🔌 WebSocket connected: session=sess_f3412hx3
+2026-03-09 09:08:26 | INFO | 🔌 WebSocket disconnected: session=sess_f3412hx3
+2026-03-09 09:08:27 | INFO | 🔌 WebSocket connected: session=sess_f3412hx3
+2026-03-09 09:08:43 | ERROR | ❌ STT Error [5945ms]: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-03-09 09:09:00 | ERROR | ❌ STT Error [5895ms]: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-03-09 09:09:46 | INFO | 🔌 WebSocket disconnected: session=sess_f3412hx3
+2026-03-09 09:09:50 | INFO | 🔌 WebSocket connected: session=sess_20me2axe
+2026-03-09 09:10:04 | ERROR | ❌ STT Error [4737ms]: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-03-09 09:11:50 | INFO | 🔌 WebSocket disconnected: session=sess_20me2axe
+2026-03-09 09:11:51 | INFO | 🛑 Shutting down Voice AI Agent...
